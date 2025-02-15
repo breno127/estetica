@@ -1,11 +1,9 @@
-/* Resetando margens e padding padrão */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Definindo fontes e cores padrão */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f6f6f6;
@@ -14,7 +12,6 @@ body {
     margin: 0;
 }
 
-/* Cabeçalho */
 .header {
     background-color: #fff;
     text-align: center;
@@ -62,7 +59,6 @@ body {
     background-color: #f14e5b;
 }
 
-/* Apresentação */
 .presentation {
     text-align: center;
     padding: 40px 20px;
@@ -83,7 +79,6 @@ body {
     margin: 0 auto;
 }
 
-/* Galeria de Imagens */
 .gallery {
     display: flex;
     justify-content: center;
@@ -102,7 +97,6 @@ body {
     transform: scale(1.05);
 }
 
-/* Seção de Serviços */
 .services {
     padding: 60px 20px;
     text-align: center;
@@ -143,7 +137,6 @@ body {
     background-color: #f9f9f9;
 }
 
-/* Seção de Contato */
 .contact {
     text-align: center;
     padding: 60px 20px;
@@ -179,7 +172,6 @@ body {
     background-color: #f14e5b;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .gallery {
         flex-direction: column;

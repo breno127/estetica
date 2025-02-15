@@ -1,0 +1,209 @@
+/* Resetando margens e padding padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo fontes e cores padrão */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f6f6f6;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.header .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #222;
+    font-family: 'Georgia', serif;
+}
+
+.contact-button {
+    position: absolute;
+    right: 20px;
+    top: 40px;
+}
+
+.contact-button a {
+    background-color: #f28b8c;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button a:hover {
+    background-color: #f14e5b;
+}
+
+/* Apresentação */
+.presentation {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.presentation h2 {
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.presentation p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Galeria de Imagens */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 0;
+}
+
+.gallery img {
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Seção de Serviços */
+.services {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+    margin: 40px auto;
+    max-width: 1000px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.service {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.service h3 {
+    font-size: 1.8rem;
+    color: #f28b8c;
+    margin-bottom: 15px;
+}
+
+.service p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.service:hover {
+    background-color: #f9f9f9;
+}
+
+/* Seção de Contato */
+.contact {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fff;
+    margin-top: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.contact-link {
+    background-color: #f28b8c;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-link:hover {
+    background-color: #f14e5b;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .services {
+        padding: 40px 20px;
+    }
+
+    .service {
+        padding: 15px;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .presentation h2 {
+        font-size: 1.6rem;
+    }
+}
